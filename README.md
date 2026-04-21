@@ -49,4 +49,4 @@ To ensure identical results across executions, the project uses a centralized se
 * PyTorch (including CuDNN determinism)
 * JAX PRNG keys
 
-Created as part of ECON 622: Graduate Econometrics at the University of British Columbia.
+Created as part of ECON 622 at the University of British Columbia.
