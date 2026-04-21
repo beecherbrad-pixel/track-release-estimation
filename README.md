@@ -35,7 +35,7 @@ KAGGLE_KEY=your_kaggle_api_key
 However, I have also provided a data.zip file for easy access to the data, so there is no need to go through the trouble of obtaining a key.
 
 ## Overview
-The main analysis is in the file music_release_timings.ipynb. This programming exercise goes through the following stages:
+The main analysis is in the file src/music_release_timings.ipynb. This programming exercise goes through the following stages:
 * Data Preparation (build_estimation_dataset.py): Cleans raw Spotify charts and interpolates daily streaming flows.
 * State Dynamics (estimate_state_process.py): Estimates a stationary VAR(1) process for market and genre heat.
 * Structural Estimation (structural_estimation.py): Estimates the artist potential ($\eta$) and decay ($\lambda$) using JAX.
