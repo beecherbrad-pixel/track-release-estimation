@@ -19,7 +19,7 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
 ### 3. Install Dependencies
-
+You can install these by uncommenting the first line of python code in the notebook
 ```bash
 pip install jax jaxlib optax torch pandas numpy statsmodels matplotlib kaggle python-dotenv
 ```
@@ -31,8 +31,11 @@ The project automates data acquisition via the Kaggle API. Create a .env file in
 KAGGLE_USERNAME=your_kaggle_username
 KAGGLE_KEY=your_kaggle_api_key
 ```
-## Pipeline Overview
 
+However, I have also provided a data.zip file for easy access to the data, so there is no need to go through the trouble of obtaining a key.
+
+## Overview
+The main analysis is 
 * Data Preparation (build_estimation_dataset.py): Cleans raw Spotify charts and interpolates daily streaming flows.
 * State Dynamics (estimate_state_process.py): Estimates a stationary VAR(1) process for market and genre heat.
 * Structural Estimation (structural_estimation.py): Estimates the artist potential ($\eta$) and decay ($\lambda$) using JAX.
